@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実技</title>
+    <style>
+        body{
+
+        }
+
+        .contents{
+            background-color: bisque;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+            height: 150px;
+        }
+
+        .box{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+        }
+
+        .text{
+            background-color: black;
+            height: 100px;
+            width: 800px;
+            margin: auto;
+            color: aliceblue;
+        }
+
+        img{
+            display: block;
+            margin: auto;
+        }
+
+        .form{
+            text-align: center;
+            width: 700px;
+            height: 100px;
+            display: block;
+        }
+
+        @media{
+            .body{
+                background-color: bisque;
+            }
+            .contents{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        
+
+    </style>
+<body>
+    <div class="contents">
+        <div class="box">テキスト1</div>
+        <div class="box">テキスト2</div>
+        <div class="box">テキスト3</div>
+        <div class="box">テキスト4</div>
+
+    </div>
+
+    <div class="text">文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー</div>
+    <img src="image/kapi.webp" alt="かぴパラ">
+
+    <div class="form"></div>
+    <label for="name">お名前</label>
+
+    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="9"><br>
+    <label for="kibou">返信を希望する方はチェックしてください</label>
+    <input type="checkbox" name="kibou" id="kibou"/>
+    <p>メッセージ：<br>
+    <textarea name="comment" cols="30" rows="5"></textarea></p>
+
+</div>
+</body>
+</html>
